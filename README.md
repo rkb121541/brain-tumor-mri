@@ -3,10 +3,10 @@ This project aims to use machine learning classification to determine which brai
 
 I used this [dataset](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection/data ":)") from kaggle and this [playlist](https://www.youtube.com/watch?v=CiW8gS7kqOY&list=PL5foUFuneQnratPPuucpVxWl4RlqueP1u "=)") from youtube.
 
-## Generic Image of a CNN for Understanding Purposes
-![image](cnn_architecture.png)
+## Visual Representation of Convolutional Neural Network
+![image](cnn.png)
 
-## Convolutional Neural Network Diagram (from code)
+## Convolutional Neural Network Diagram (generated using python)
 ![image](./nn_diagram.png)
 
 ## Accuracy and Loss Curves
