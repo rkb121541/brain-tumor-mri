@@ -9,16 +9,6 @@ I used this [dataset](https://www.kaggle.com/datasets/navoneel/brain-mri-images-
 ## Convolutional Neural Network Diagram (generated using python, keras, tensorflow)
 ![image](tf_model.png)
 
-## Accuracy and Loss Curves
-![image](accuracy_plot.png)
-![image](loss_plot.png)
-
-## Confusion Matrix
-![image](cm.png)
-
-## ROC Curve
-![image](roc_diagram.png)
-
 ## Model Summary
 ```
 Model: "functional_1"
@@ -42,3 +32,28 @@ Model: "functional_1"
  Non-trainable params: 14,714,688 (56.13 MB)
  Optimizer params: 4,195,846 (16.01 MB)
 ```
+
+## Classification Report
+```
+Classification Report:
+               precision    recall  f1-score   support
+
+           0       0.82      0.90      0.86        20
+           1       0.93      0.87      0.90        31
+
+    accuracy                           0.88        51
+   macro avg       0.87      0.89      0.88        51
+weighted avg       0.89      0.88      0.88        51
+```
+
+## Accuracy and Loss Curves
+![image](accuracy_plot.png)
+![image](loss_plot.png)
+
+## Confusion Matrix
+![image](cm.png)
+
+## ROC Curve
+![image](roc_diagram.png)
+
+
