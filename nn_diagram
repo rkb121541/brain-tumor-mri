@@ -1,27 +1,27 @@
 digraph {
 	graph [size="16.349999999999998,16.349999999999998"]
 	node [align=left fontname=monospace fontsize=10 height=0.2 ranksep=0.1 shape=box style=filled]
-	2008330189104 [label="
+	1943915882576 [label="
  ()" fillcolor=darkolivegreen1]
-	2008184129616 [label="MeanBackward0
+	1943767640352 [label="MeanBackward0
 ----------------------
 self_sym_numel:      1
 self_sym_sizes: (1, 1)"]
-	2008159710384 -> 2008184129616
-	2008159710384 -> 2008330357008 [dir=none]
-	2008330357008 [label="result
+	1941455614064 -> 1943767640352
+	1941455614064 -> 1943915886576 [dir=none]
+	1943915886576 [label="result
  (1, 1)" fillcolor=orange]
-	2008159710384 [label="SigmoidBackward0
+	1941455614064 [label="SigmoidBackward0
 ----------------------
 result: [saved tensor]"]
-	2007920811440 -> 2008159710384
-	2007920811440 -> 2008330189264 [dir=none]
-	2008330189264 [label="mat1
+	1943087498384 -> 1941455614064
+	1943087498384 -> 1943915882736 [dir=none]
+	1943915882736 [label="mat1
  (1, 84)" fillcolor=orange]
-	2007920811440 -> 2008330357088 [dir=none]
-	2008330357088 [label="mat2
+	1943087498384 -> 1943915886736 [dir=none]
+	1943915886736 [label="mat2
  (84, 1)" fillcolor=orange]
-	2007920811440 [label="AddmmBackward0
+	1943087498384 [label="AddmmBackward0
 --------------------------------
 alpha           :              1
 beta            :              1
@@ -31,26 +31,26 @@ mat1_sym_strides:        (84, 1)
 mat2            : [saved tensor]
 mat2_sym_sizes  :        (84, 1)
 mat2_sym_strides:        (1, 84)"]
-	2008185303008 -> 2007920811440
-	2008330187744 [label="fc_model.4.bias
+	1943767430336 -> 1943087498384
+	1943915881136 [label="fc_model.4.bias
  (1)" fillcolor=lightblue]
-	2008330187744 -> 2008185303008
-	2008185303008 [label=AccumulateGrad]
-	2008199314688 -> 2007920811440
-	2008199314688 -> 2008330357568 [dir=none]
-	2008330357568 [label="result
+	1943915881136 -> 1943767430336
+	1943767430336 [label=AccumulateGrad]
+	1943752260336 -> 1943087498384
+	1943752260336 -> 1943915887216 [dir=none]
+	1943915887216 [label="result
  (1, 84)" fillcolor=orange]
-	2008199314688 [label="TanhBackward0
+	1943752260336 [label="TanhBackward0
 ----------------------
 result: [saved tensor]"]
-	2008184917920 -> 2008199314688
-	2008184917920 -> 2008330189184 [dir=none]
-	2008330189184 [label="mat1
+	1943509072720 -> 1943752260336
+	1943509072720 -> 1943915882656 [dir=none]
+	1943915882656 [label="mat1
  (1, 120)" fillcolor=orange]
-	2008184917920 -> 2008330357808 [dir=none]
-	2008330357808 [label="mat2
+	1943509072720 -> 1943915887456 [dir=none]
+	1943915887456 [label="mat2
  (120, 84)" fillcolor=orange]
-	2008184917920 [label="AddmmBackward0
+	1943509072720 [label="AddmmBackward0
 --------------------------------
 alpha           :              1
 beta            :              1
@@ -60,26 +60,26 @@ mat1_sym_strides:       (120, 1)
 mat2            : [saved tensor]
 mat2_sym_sizes  :      (120, 84)
 mat2_sym_strides:       (1, 120)"]
-	2008186324256 -> 2008184917920
-	2008199509760 [label="fc_model.2.bias
+	1943720392400 -> 1943509072720
+	1943915740000 [label="fc_model.2.bias
  (84)" fillcolor=lightblue]
-	2008199509760 -> 2008186324256
-	2008186324256 [label=AccumulateGrad]
-	2008186328768 -> 2008184917920
-	2008186328768 -> 2008330358128 [dir=none]
-	2008330358128 [label="result
+	1943915740000 -> 1943720392400
+	1943720392400 [label=AccumulateGrad]
+	1941455390464 -> 1943509072720
+	1941455390464 -> 1943915887776 [dir=none]
+	1943915887776 [label="result
  (1, 120)" fillcolor=orange]
-	2008186328768 [label="TanhBackward0
+	1941455390464 [label="TanhBackward0
 ----------------------
 result: [saved tensor]"]
-	2008199458448 -> 2008186328768
-	2008199458448 -> 2008330188704 [dir=none]
-	2008330188704 [label="mat1
+	1941455269568 -> 1941455390464
+	1941455269568 -> 1943915882016 [dir=none]
+	1943915882016 [label="mat1
  (1, 256)" fillcolor=orange]
-	2008199458448 -> 2008330358368 [dir=none]
-	2008330358368 [label="mat2
+	1941455269568 -> 1943915888016 [dir=none]
+	1943915888016 [label="mat2
  (256, 120)" fillcolor=orange]
-	2008199458448 [label="AddmmBackward0
+	1941455269568 [label="AddmmBackward0
 --------------------------------
 alpha           :              1
 beta            :              1
@@ -89,20 +89,20 @@ mat1_sym_strides:       (256, 1)
 mat2            : [saved tensor]
 mat2_sym_sizes  :     (256, 120)
 mat2_sym_strides:       (1, 256)"]
-	2008330161888 -> 2008199458448
-	2008198980912 [label="fc_model.0.bias
+	1943155799712 -> 1941455269568
+	1943767159728 [label="fc_model.0.bias
  (120)" fillcolor=lightblue]
-	2008198980912 -> 2008330161888
-	2008330161888 [label=AccumulateGrad]
-	2008330173936 -> 2008199458448
-	2008330173936 [label="ViewBackward0
+	1943767159728 -> 1943155799712
+	1943155799712 [label=AccumulateGrad]
+	1943155795248 -> 1941455269568
+	1943155795248 [label="ViewBackward0
 -----------------------------
 self_sym_sizes: (1, 16, 4, 4)"]
-	2008199460944 -> 2008330173936
-	2008199460944 -> 2008330188944 [dir=none]
-	2008330188944 [label="self
+	1943767498128 -> 1943155795248
+	1943767498128 -> 1943915882416 [dir=none]
+	1943915882416 [label="self
  (1, 16, 21, 21)" fillcolor=orange]
-	2008199460944 [label="AvgPool2DBackward0
+	1943767498128 [label="AvgPool2DBackward0
 ---------------------------------
 ceil_mode        :          False
 count_include_pad:           True
@@ -111,21 +111,21 @@ kernel_size      :         (2, 2)
 padding          :         (0, 0)
 self             : [saved tensor]
 stride           :         (5, 5)"]
-	2008186092560 -> 2008199460944
-	2008186092560 -> 2008330358768 [dir=none]
-	2008330358768 [label="result
+	1943767492656 -> 1943767498128
+	1943767492656 -> 1943915888576 [dir=none]
+	1943915888576 [label="result
  (1, 16, 21, 21)" fillcolor=orange]
-	2008186092560 [label="TanhBackward0
+	1943767492656 [label="TanhBackward0
 ----------------------
 result: [saved tensor]"]
-	2008186092896 -> 2008186092560
-	2008186092896 -> 2008330188624 [dir=none]
-	2008330188624 [label="input
+	1943767637856 -> 1943767492656
+	1943767637856 -> 1943915882096 [dir=none]
+	1943915882096 [label="input
  (1, 6, 25, 25)" fillcolor=orange]
-	2008186092896 -> 2008198987152 [dir=none]
-	2008198987152 [label="weight
+	1943767637856 -> 1943511833872 [dir=none]
+	1943511833872 [label="weight
  (16, 6, 5, 5)" fillcolor=orange]
-	2008186092896 [label="ConvolutionBackward0
+	1943767637856 [label="ConvolutionBackward0
 ----------------------------------
 bias_sym_sizes_opt:          (16,)
 dilation          :         (1, 1)
@@ -136,11 +136,11 @@ padding           :         (0, 0)
 stride            :         (1, 1)
 transposed        :          False
 weight            : [saved tensor]"]
-	2008199536000 -> 2008186092896
-	2008199536000 -> 2008330188784 [dir=none]
-	2008330188784 [label="self
+	1943767317184 -> 1943767637856
+	1943767317184 -> 1943915882256 [dir=none]
+	1943915882256 [label="self
  (1, 6, 124, 124)" fillcolor=orange]
-	2008199536000 [label="AvgPool2DBackward0
+	1943767317184 [label="AvgPool2DBackward0
 ---------------------------------
 ceil_mode        :          False
 count_include_pad:           True
@@ -149,21 +149,21 @@ kernel_size      :         (2, 2)
 padding          :         (0, 0)
 self             : [saved tensor]
 stride           :         (5, 5)"]
-	2008199458160 -> 2008199536000
-	2008199458160 -> 2008330359248 [dir=none]
-	2008330359248 [label="result
+	1943751877888 -> 1943767317184
+	1943751877888 -> 1943916036336 [dir=none]
+	1943916036336 [label="result
  (1, 6, 124, 124)" fillcolor=orange]
-	2008199458160 [label="TanhBackward0
+	1943751877888 [label="TanhBackward0
 ----------------------
 result: [saved tensor]"]
-	2008199454704 -> 2008199458160
-	2008199454704 -> 2007921727424 [dir=none]
-	2007921727424 [label="input
+	1943752072624 -> 1943751877888
+	1943752072624 -> 1943915882176 [dir=none]
+	1943915882176 [label="input
  (1, 3, 128, 128)" fillcolor=orange]
-	2008199454704 -> 2008199028304 [dir=none]
-	2008199028304 [label="weight
+	1943752072624 -> 1943511390224 [dir=none]
+	1943511390224 [label="weight
  (6, 3, 5, 5)" fillcolor=orange]
-	2008199454704 [label="ConvolutionBackward0
+	1943752072624 [label="ConvolutionBackward0
 ----------------------------------
 bias_sym_sizes_opt:           (6,)
 dilation          :         (1, 1)
@@ -174,46 +174,46 @@ padding           :         (0, 0)
 stride            :         (1, 1)
 transposed        :          False
 weight            : [saved tensor]"]
-	2008199456480 -> 2008199454704
-	2008199028304 [label="cnn_model.0.weight
+	1943511913600 -> 1943752072624
+	1943511390224 [label="cnn_model.0.weight
  (6, 3, 5, 5)" fillcolor=lightblue]
-	2008199028304 -> 2008199456480
-	2008199456480 [label=AccumulateGrad]
-	2008199458400 -> 2008199454704
-	2008153625360 [label="cnn_model.0.bias
+	1943511390224 -> 1943511913600
+	1943511913600 [label=AccumulateGrad]
+	1943511912160 -> 1943752072624
+	1943767154848 [label="cnn_model.0.bias
  (6)" fillcolor=lightblue]
-	2008153625360 -> 2008199458400
-	2008199458400 [label=AccumulateGrad]
-	2008186077728 -> 2008186092896
-	2008198987152 [label="cnn_model.3.weight
+	1943767154848 -> 1943511912160
+	1943511912160 [label=AccumulateGrad]
+	1943767634304 -> 1943767637856
+	1943511833872 [label="cnn_model.3.weight
  (16, 6, 5, 5)" fillcolor=lightblue]
-	2008198987152 -> 2008186077728
-	2008186077728 [label=AccumulateGrad]
-	2008199453696 -> 2008186092896
-	2008198976592 [label="cnn_model.3.bias
+	1943511833872 -> 1943767634304
+	1943767634304 [label=AccumulateGrad]
+	1943767641792 -> 1943767637856
+	1943767155568 [label="cnn_model.3.bias
  (16)" fillcolor=lightblue]
-	2008198976592 -> 2008199453696
-	2008199453696 [label=AccumulateGrad]
-	2008330165536 -> 2008199458448
-	2008330165536 [label=TBackward0]
-	2008186092272 -> 2008330165536
-	2008198977472 [label="fc_model.0.weight
+	1943767155568 -> 1943767641792
+	1943767641792 [label=AccumulateGrad]
+	1943158662592 -> 1941455269568
+	1943158662592 [label=TBackward0]
+	1943751877744 -> 1943158662592
+	1943767165568 [label="fc_model.0.weight
  (120, 256)" fillcolor=lightblue]
-	2008198977472 -> 2008186092272
-	2008186092272 [label=AccumulateGrad]
-	2008184336064 -> 2008184917920
-	2008184336064 [label=TBackward0]
-	2008186093088 -> 2008184336064
-	2008199016000 [label="fc_model.2.weight
+	1943767165568 -> 1943751877744
+	1943751877744 [label=AccumulateGrad]
+	1941455273600 -> 1943509072720
+	1941455273600 [label=TBackward0]
+	1943719052240 -> 1941455273600
+	1943511392384 [label="fc_model.2.weight
  (84, 120)" fillcolor=lightblue]
-	2008199016000 -> 2008186093088
-	2008186093088 [label=AccumulateGrad]
-	2008199312192 -> 2007920811440
-	2008199312192 [label=TBackward0]
-	2008159374064 -> 2008199312192
-	2008330186784 [label="fc_model.4.weight
+	1943511392384 -> 1943719052240
+	1943719052240 [label=AccumulateGrad]
+	1943753054416 -> 1943087498384
+	1943753054416 [label=TBackward0]
+	1943752077088 -> 1943753054416
+	1943767612576 [label="fc_model.4.weight
  (1, 84)" fillcolor=lightblue]
-	2008330186784 -> 2008159374064
-	2008159374064 [label=AccumulateGrad]
-	2008184129616 -> 2008330189104
+	1943767612576 -> 1943752077088
+	1943752077088 [label=AccumulateGrad]
+	1943767640352 -> 1943915882576
 }
